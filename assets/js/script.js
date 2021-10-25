@@ -173,7 +173,6 @@ $(",list-group").on("blur", "input[type=text]", function () {
   $(this).replaceWith(taskSpan)
 })
 
-//remove all tasks
 // remove all tasks
 $("#remove-tasks").on("click", function() {
   for (var key in tasks) {
@@ -182,7 +181,6 @@ $("#remove-tasks").on("click", function() {
   }
   saveTasks();
 });
-
 
 // load tasks for the first time
 loadTasks();
